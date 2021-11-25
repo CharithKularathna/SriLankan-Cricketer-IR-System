@@ -6,7 +6,7 @@ es = Elasticsearch([{'host': 'localhost', 'port':9200}])
 
 def data_upload(dataArray):
     print (dataArray)
-    helpers.bulk(es, data, index='index-players', doc_type='players')
+    helpers.bulk(es, data, index='index-players2', doc_type='players')
 
 
 data = []

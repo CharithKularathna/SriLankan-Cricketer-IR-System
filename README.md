@@ -30,13 +30,15 @@ After Installing ElasticSearch, start an elasticsearch cluster on port 9200. (lo
 ```commandline
 git clone https://github.com/CharithKularathna/SriLankan-Cricketer-IR-System
 
-cd SriLankan Crickter IR System
+cd SriLankan Cricketer IR System
 
 virtualenv -p python3 envname
 
 source env/bin/activate
 
 pip3 install -r requirements.txt
+
+python makeIndex.py
 
 python app.py
 ```
