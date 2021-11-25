@@ -13,7 +13,7 @@
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg>
         <span style="width: 20px;"></span>
-        <span class="fs-4">Sri Lankan ODI Cricketers</span>
+        <span class="fs-4 text-primary">Sri Lankan ODI Cricketers</span>
       </a>
       <ul class="nav nav-pills">
         
@@ -48,8 +48,11 @@
     
     <div class="col-12">
       <div class="card" style="width: 100%">
+        {% if names == [] %}
+          <div><p class="lead text-center">No Search Results were Found!</p></div>
+        {% endif %}
         {% for each in names %}
-        <div class="card border-dark mb-3" style="width: 100%">
+        <div class="card border-secondary mb-3 rounded" style="width: 100%">
           <div class="card-body">
             {% for key, value in each.items() %}
             <ul class="list-group list-group-flush">
