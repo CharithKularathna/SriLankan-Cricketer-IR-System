@@ -21,18 +21,18 @@ The important files and directories of the repository is shown below
 ### Starting the ElasticSearch Cluster
 
 You can install elasticsearch locally by downloading the package and running the corresponding binary file.
-For more details visit [website](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html)
+For more details visit [website](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html).
 
 After Installing ElasticSearch, start an elasticsearch cluster on port 9200. (localhost:9200/)
 
-### Getting started with the web app
+### Launching the Web Appication
 
 ```commandline
 git clone https://github.com/CharithKularathna/SriLankan-Cricketer-IR-System
 
 cd SriLankan Cricketer IR System
 
-virtualenv -p python3 envname
+virtualenv envname
 
 source env/bin/activate
 
