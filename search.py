@@ -38,7 +38,7 @@ def searchText(term):
                 "multi_match": {
                     "query" : term,
                     "type" : "best_fields",
-                    "fields" : ["name", "bio", "years"],
+                    "fields" : ["name^5", "bio^2", "years"],
                 }
             },
             
