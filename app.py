@@ -18,7 +18,6 @@ def index():
             if request.form['query']:
                 search = request.form['query']
                 gSearch = search
-                print(gSearch)
             else :
                 search = gSearch
             names = searchQuery(search)
